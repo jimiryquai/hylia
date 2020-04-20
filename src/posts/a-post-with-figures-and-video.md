@@ -26,18 +26,6 @@ Every day is a school day 🎓 and this is what helps me get out of bed in the m
 
 ## How to style a HTML progress bar
 
-
+If you check out the design file linked above, you'll see that the first or home screen of the app looks quite a bit more complicated to design/code that the second or player screen. I gave Jayme the chance to specify which screen she'd like to code and she said she didn't have a preference so I instantly reverted to type and chose what I felt would be the easier option - the player screen 👇 (sorry Jayme 🤭).
 
 ![A music streaming app screen with a Jonas Brothers track playing](/images/music-streaming-app.png "The app screen I chose to create")
-
-You can also add videos to posts from YouTube or Vimeo (or wherever, really) and the front-end will also make those bleed-out for you too.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_38JDGnr0vA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Finally, how about a `<blockquote>`?
-
-> Quotes will take a slightly different style to normal body text and look fancy.
-
-![Person holds up a photograph of a riverside and buildings with the same river as a backdrop](/images/demo-image-2.jpg "Remember, if you want a figure and caption, add a 'title' attribute to image in the body field — Photo by Kharytonova Antonina on Unsplash.")
-
-Hopefully, this has demonstrated how simple it is to make a nice looking blog with Hylia.
