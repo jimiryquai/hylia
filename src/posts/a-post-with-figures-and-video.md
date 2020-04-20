@@ -28,7 +28,7 @@ Every day is a school day 🎓 and this is what helps me get out of bed in the m
 
 If you check out the design file linked above, you'll see that the first or home screen of the app looks quite a bit more complicated to design/code that the second or player screen. I gave Jayme the chance to specify which screen she'd like to code and she said she didn't have a preference so I instantly reverted to type and chose what I felt would be the easier option - the player screen 👇 (sorry Jayme 🤭).
 
-![A music streaming app screen with a Jonas Brothers track playing](/images/music-app-figma.png "The app screen I chose to create")
+![A music streaming app design in Figma](/images/music-app-figma.png "The design file for our app")
 
 The progress bar was the only unknown entity to me on this screen and I imagined it had been included as part of the design as the mentors knew it would be a bit of a pain in the ass to style.
 
