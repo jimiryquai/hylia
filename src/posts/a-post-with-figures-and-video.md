@@ -142,7 +142,7 @@ Can you spot the obvious mistake or omission here? Yep, that's right - my button
 const buttons = document.querySelectorAll('button');
 ```
 
-I then further extended Andy's code by adding a `for` loop to apply the dark class to each item in this list:
+I then further extended Andy's code by adding a `for` loop to iterate through the buttons list and apply the dark class to each item in the list:
 
 ```javascript
 toggle.querySelector('input').addEventListener('change', evt => {
@@ -179,7 +179,7 @@ const buttons = document.querySelectorAll('button:not(.button_play):not(.popup__
 
 I terms of the text, I took the really easy option of removing the colours that I had applied to them and allowing the global `color: inherit;` to do it's work. As you can see... it worked! 
 
-![](/images/dark-mode-working.gif)
+![An animated image showing dark mode being toggled on and off and the text being visible this time](/images/dark-mode-working.gif "It works!!!")
 
 Technically this is a bit of a hack and in real terms it would have contradicted the brief in terms of text colours but I had other issues that needed resolving so I left this work on the feature/dark-mode branch and didn't merge with the develop branch within the GitHub repo. This feature will be revisited in the near future.
 
@@ -187,7 +187,7 @@ Technically this is a bit of a hack and in real terms it would have contradicted
 
 Up until this project I'd been the sole contributor on all of the projects I'd worked on. After setting up the repo on GitHub I invited to contribute and then created a develop branch:
 
-```gitconfig
+```shell
 git checkout -b develop
 ```
 
@@ -195,4 +195,27 @@ This is where I set up the file structure and created my HTML framework. Once th
 
 Creating separate branches for features and making small, regular commits in this way was very helpful in terms of staying organised. One thing I became acutely aware of was the need to make sure to pull the latest code down from GitHub every morning or every time I'd stepped away from my computer for a while. This wasn't an established habit and I almost got caught out a couple of times only to see that Jayme had made changes to the code base in the meantime.
 
-Once Jayme and I were relatively happy with our work it was time to set up a pull request and then invite two fellow students to review our work. The only issue was that I didn't have a clue how to do this. After much searching I came across this lifesaver of an article
+Once Jayme and I were relatively happy with our work it was time to set up a pull request and then invite two fellow students to review our work. The only issue was that I didn't have a clue how to do this. I followed the instructions in this [GitHub Gist](https://gist.github.com/ozh/4734410) to create an empty branch to create a pull request from but the request failed as the new empty branch and the develop branch didn't have a shared history.
+
+After much searching I came across this lifesaver of an article: [How to conduct a full code review on GitHub](https://astrofrog.github.io/blog/2013/04/10/how-to-conduct-a-full-code-review-on-github/).
+
+The gist of it was that I needed to find out the commit hash for the first commit in the develop repository:
+
+```shell
+git rev-list --all | tail -1
+3fe8db034c646622588f9ca2338954e4462991c9
+```
+
+I then needed to create an empty branch containing only that commit:
+
+```shell
+git branch review ec2287e5837386c54fbd082021530aa18c0dcf18
+```
+
+Push my review branch to GitHub and then create a pull request from there:
+
+![Creating a pull request in GitHub](/images/pull-request.png "Get yer coat..")
+
+All I needed to do then was invite the Borsch team to review our work and offered our services for the Hollywood team.:
+
+![Performing a code review for the Borsch team](/images/code-review.png "I'm not judging 🧑‍⚖️")
