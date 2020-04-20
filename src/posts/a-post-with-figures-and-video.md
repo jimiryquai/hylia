@@ -131,3 +131,5 @@ And that was that! The app can be found on GitHub Pages if you'd like to take a 
 [Music Streaming App](https://jimiryquai.github.io/music_player_app/player.html)
 
 ## How to loop through an array in JavaScript and selectively apply CSS classes
+
+Once I'd got my work to the work to the point where I felt it satisfied the brief, I started to wonder how I could stretch myself further. I considered adding audio files that would play/pause when the Play button was pressed and felt like I could actually get this done but I wouldn't have been happy without also being able to get the Rewind/Fast Forward buttons working and I wasn't so confident about that. In the end, I took what I thought would be an easier options and decided to try and implement
