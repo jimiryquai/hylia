@@ -188,7 +188,7 @@ Technically this is a bit of a hack and in real terms it would have contradicted
 
 Up until this project I'd been the sole contributor on all of the projects I'd worked on. After setting up the repo on GitHub I invited to contribute and then created a develop branch:
 
-```gitconfig
+```javascript
 git checkout -b develop
 ```
 
@@ -202,14 +202,14 @@ After much searching I came across this lifesaver of an article: [How to conduct
 
 The gist of it was that I needed to find out the commit hash for the first commit in the develop repository:
 
-```gitconfig
+```javascript
 git rev-list --all | tail -1
 3fe8db034c646622588f9ca2338954e4462991c9
 ```
 
 I then needed to create an empty branch containing only that commit:
 
-```gitconfig
+```javascript
 git branch review ec2287e5837386c54fbd082021530aa18c0dcf18
 ```
 
