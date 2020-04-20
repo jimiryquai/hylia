@@ -35,3 +35,9 @@ The progress bar was the only unknown entity to me on this screen and I imagined
 As with most things in life, particularly web/software dev, it's always easier to stand on the shoulders of giants and so I turned to the #1 skill of the modern developer - I Googled it 😂. I came across this super-comprehensive article by Pankaj Parasar on CSS-TRICKS:
 
 [The HTML5 Progress Element](https://css-tricks.com/author/pankajparashar/)
+
+Pankaj had also created a Pen on CodePen:
+
+[Skillset using HTML5 progress bars with CSS3 animations](https://codepen.io/team/css-tricks/pen/PNNQxm "Skillset using HTML5 progress bars with CSS3 animations")
+
+Let me be clear here though, this wasn't just a straight-forward copy and paste job! Whilst Pankaj had been extremely thorough, making sure the markup and styling were as cross-browser compatible as possible whilst also being backwards compatible with older browsers, he'd also added lots of styling that was unnecessary for
