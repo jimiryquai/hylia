@@ -14,7 +14,7 @@ For our latest project we were split into pairs and asked to code the front-end 
 * 🎥 Movie reviews
 * 🎵 Music streaming
 
- I ❤️ music so I wanted to be a part of the music streaming app team and I managed to get myself assigned to Beethoven group along with the super-talented Jayme Waye 🎉. Here's the link to the Figma design file that we were tasked with turning into a prototype:
+I wanted to build the music streaming app and I managed to get myself assigned to Beethoven team along with the super-talented Jayme Waye 🎉. Here's the link to the Figma design file that we were tasked with turning into a prototype:
 
 [Music Streaming App Design File](https://www.figma.com/file/rRE5kHZSGzj2XSd0gZQgrl/Music-Player-Box-Template-Copy?node-id=0%3A1)
 
@@ -28,4 +28,10 @@ Every day is a school day 🎓 and this is what helps me get out of bed in the m
 
 If you check out the design file linked above, you'll see that the first or home screen of the app looks quite a bit more complicated to design/code that the second or player screen. I gave Jayme the chance to specify which screen she'd like to code and she said she didn't have a preference so I instantly reverted to type and chose what I felt would be the easier option - the player screen 👇 (sorry Jayme 🤭).
 
-![A music streaming app screen with a Jonas Brothers track playing](/images/music-streaming-app.png "The app screen I chose to create")
+![A music streaming app screen with a Jonas Brothers track playing](/images/music-app-figma.png "The app screen I chose to create")
+
+The progress bar was the only unknown entity to me on this screen and I imagined it had been included as part of the design as the mentors knew it would be a bit of a pain in the ass to style.
+
+As with most things in life, particularly web/software dev, it's always easier to stand on the shoulders of giants and so I turned to the #1 skill of the modern developer - I Googled it 😂. I came across this super-comprehensive article by Pankaj Parasar on CSS-TRICKS:
+
+[The HTML5 Progress Element](https://css-tricks.com/author/pankajparashar/)
