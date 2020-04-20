@@ -1,5 +1,6 @@
 ---
 title: A Week of Firsts
+socialImage: /images/music-app-figma.png
 date: 2020-04-20T06:40:33.500Z
 tags:
   - blog
