@@ -32,13 +32,7 @@ If you check out the design file linked above, you'll see that the first or home
 
 The progress bar was the only unknown entity to me on this screen and I imagined it had been included as part of the design as the mentors knew it would be a bit of a pain in the ass to style.
 
-As with most things in life, particularly web/software dev, it's always easier to stand on the shoulders of giants and so I turned to the #1 skill of the modern developer - I Googled it 😂. I came across this super-comprehensive article by Pankaj Parasar on CSS-TRICKS:
-
-[The HTML5 Progress Element](https://css-tricks.com/author/pankajparashar/)
-
-Pankaj had also created a Pen on CodePen:
-
-[Skillset using HTML5 progress bars with CSS3 animations](https://codepen.io/team/css-tricks/pen/PNNQxm "Skillset using HTML5 progress bars with CSS3 animations")
+As with most things in life, particularly web/software dev, it's always easier to stand on the shoulders of giants and so I turned to the #1 skill of the modern developer - I Googled it 😂. I came across this super-comprehensive article by Pankaj Parasar on CSS-TRICKS: [The HTML5 Progress Element](https://css-tricks.com/author/pankajparashar/). Pankaj had also created a Pen on CodePen: [Skillset using HTML5 progress bars with CSS3 animations](https://codepen.io/team/css-tricks/pen/PNNQxm "Skillset using HTML5 progress bars with CSS3 animations").
 
 Let me be clear here though, this wasn't just a straight-forward copy and paste job! Whilst Pankaj had been extremely thorough, making sure the markup and styling were as cross-browser compatible as possible whilst also being backwards compatible, he'd also added lots of styling that I'd need to remove or change in order to stay on-brief.
 
@@ -126,10 +120,20 @@ These elements were then pulled together within the parent block:
 }
 ```
 
-And that was that! The app can be found on GitHub Pages if you'd like to take a look:
-
-[Music Streaming App](https://jimiryquai.github.io/music_player_app/player.html)
+And that was that! The app can be found on GitHub Pages if you'd like to take a look: [Music Streaming App](https://jimiryquai.github.io/music_player_app/player.html).
 
 ## How to loop through an array in JavaScript and selectively apply CSS classes
 
-Once I'd got my work to the work to the point where I felt it satisfied the brief, I started to wonder how I could stretch myself further. I considered adding audio files that would play/pause when the Play button was pressed and felt like I could actually get this done but I wouldn't have been happy without also being able to get the Rewind/Fast Forward buttons working and I wasn't so confident about that. In the end, I took what I thought would be an easier options and decided to try and implement
+Once I'd got my work to the point where I felt it satisfied the brief, I started to wonder how I could stretch myself further 🤔. I considered adding audio files that would play/pause when the Play button was pressed and felt like I could actually get this done but I wouldn't have been happy without also being able to get the Rewind/Fast Forward buttons working and I wasn't as confident about that. In the end, I took what I thought would be the easier option (surprise, surprise) and decided to try and implement a dark theme.
+
+Why was I more confident about being able to implement this feature? I'll tell you why... because I follow the ridiculously-good [@hankchizljaw](https://twitter.com/hankchizljaw?lang=en) and he has a superb tutorial on his website [Piccalil.li](https://piccalil.li/tutorial/solution-002-toggle-switch/). Give him a follow on Twitter - heck, join his [Community](https://community.piccalil.li/) - it's gold believe me!
+
+So I followed along with Andy's tutorial and also took a look at the website of another member of his community, Daniel Post. On his site [Daniel](https://danielpost.com/) has taken a slightly different approach to Andy in that he's created his toggle as a button rather a checkbox and he's also placed it inside of a modal popup. I decided to take a hybrid approach - use the code from Andy's tutorial and place the toggle inside a popup modal à la Daniel.
+
+![A screenshot of Daniel Post's website showing his popup implementation](/images/daniel-pop-up.png "The amazing site of Daniel Post")
+
+After a little bit of tinkering around I had a (semi) working implementation of the dark mode theme on my page:
+
+![A screenshot of the music player with dark mode applied](/images/darkmode.png "Who turned the lights out?")
+
+Can you spot the obvious mistake or omission here? Yep, that's right - my buttons and text are no longer visible. The polar opposite of accessibility and not what we want at all!
