@@ -16,13 +16,21 @@ For our latest project we were split into pairs and asked to code the front-end 
 
  I ❤️ music so I wanted to be a part of the music streaming app team and I managed to get myself assigned to Beethoven group along with the super-talented Jayme Waye 🎉. Here's the link to the Figma design file that we were tasked with turning into a prototype:
 
-https://www.figma.com/file/rRE5kHZSGzj2XSd0gZQgrl/Music-Player-Box-Template-Copy?node-id=0%3A1
-
-
+[Music Streaming App Design File](https://www.figma.com/file/rRE5kHZSGzj2XSd0gZQgrl/Music-Player-Box-Template-Copy?node-id=0%3A1)
 
 Every day is a school day and this is what helps me get out of bed in the morning. I ❤️ learning and the feeling of being pushed outside of your comfort zone and this week I learned some things that I feel it's worth making a record of:
 
-1.  
+1. How to style a HTML progress bar
+2. How to loop through an array in JavaScript and apply a CSS class to some items whilst excluding others
+3. How to collaborate on code in GitHub, set up a pull request and review somebody else's code
+
+
+
+## How to style a HTML progress bar
+
+
+
+
 
 ![The top of a grey concrete building with a blue sky in the background](/images/demo-image-1.jpg "Brutalism at its finest. Photo by Artificial Photography on Unsplash.")
 
