@@ -219,3 +219,9 @@ Push my review branch to GitHub and then create a pull request from there:
 All I needed to do then was invite the Borsch team to review our work and offered our services for the Hollywood team.:
 
 ![Performing a code review for the Borsch team](/images/code-review.png "I'm not judging 🧑‍⚖️")
+
+## Conclusion
+
+To round off this week of firsts I decided I should break new ground in another arena - yeah that's right this is my first blog post!
+
+In summary I can't recommend the Practicum by Yandex Web Developer track enough. I've learned so much since February and there's so much of the course left in front of us. So from here on in it's going to be one blog post per week because every week has been like this so far. Onward and upward.
