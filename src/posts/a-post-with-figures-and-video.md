@@ -136,4 +136,31 @@ After a little bit of tinkering around I had a (semi) working implementation of 
 
 ![A screenshot of the music player with dark mode applied](/images/darkmode.png "Who turned the lights out?")
 
-Can you spot the obvious mistake or omission here? Yep, that's right - my buttons and text are no longer visible. The polar opposite of accessibility and not what we want at all!
+Can you spot the obvious mistake or omission here? Yep, that's right - my buttons and text are no longer visible. The polar opposite of accessibility and not what we want at all! I'm a beginner/upper beginner with JavaScript but I knew that I'd need to extend Andy's code and apply a `dark` class to every button on the page. The first thing I did was declare a variable that would store all the buttons as a list:
+
+```javascript
+const buttons = document.querySelectorAll('button');
+```
+
+I then further extended Andy's code by adding a for loop to apply the dark class to each item in this list:
+
+```javascript
+toggle.querySelector('input').addEventListener('change', evt => {
+  if (evt.target.checked) {
+    main.classList.add('main-content_dark');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.add('button_dark');
+    }
+    return;
+  }
+
+  main.classList.remove('main-content_dark');
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('button_dark');
+    }
+});
+```
+
+This did the trick in terms of making my buttons visible but it was also incomplete as a solution and had some unintended side-effects:
+
+![An animated image showing dark mode being toggled on and off](/images/dark-toggle.gif "Houston... we have problems")
