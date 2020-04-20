@@ -142,7 +142,7 @@ Can you spot the obvious mistake or omission here? Yep, that's right - my button
 const buttons = document.querySelectorAll('button');
 ```
 
-I then further extended Andy's code by adding a for loop to apply the dark class to each item in this list:
+I then further extended Andy's code by adding a `for` loop to apply the dark class to each item in this list:
 
 ```javascript
 toggle.querySelector('input').addEventListener('change', evt => {
@@ -167,6 +167,32 @@ This did the trick in terms of making my buttons visible but it was also incompl
 
 So there were three things going on:
 
-1. The pause button was basically disappearing due to the dark class being applied:
-2. The close button at the top of the popup (which is invisible and needs fixing) is flashing when the dark class is applied:
+1. The pause button was basically disappearing due to the dark class being applied.
+2. The close button at the top of the popup (which is invisible and needs fixing) is flashing when the dark class is applied.
 3. The text is still disappearing.
+
+At this point I was a little bit stuck and turned to Google where I searched for "query selector all but one" (it should've actually been two but... 🤷‍♂️) and the first entry in the results was from the other search engine that every developer relies upon: [Stack Overflow](https://stackoverflow.com/questions/25605367/how-to-exclude-specific-class-names-in-queryselectorall): I had come across the `:(not)` selector before in CSS but didn't know that you could use it in JavaScript too. I amended my variable by chaining two `:not()` selectors to the button class and passed the classes of the buttons that I wanted to exclude in as parameters:
+
+```javascript
+const buttons = document.querySelectorAll('button:not(.button_play):not(.popup__close)');
+```
+
+I terms of the text, I took the really easy option of removing the colours that I had applied to them and allowing the global `color: inherit;` to do it's work. As you can see... it worked! 
+
+![](/images/dark-mode-working.gif)
+
+Technically this is a bit of a hack and in real terms it would have contradicted the brief in terms of text colours but I had other issues that needed resolving so I left this work on the feature/dark-mode branch and didn't merge with the develop branch within the GitHub repo. This feature will be revisited in the near future.
+
+## How to collaborate on code in GitHub, set up a pull request and review somebody else's code
+
+Up until this project I'd been the sole contributor on all of the projects I'd worked on. After setting up the repo on GitHub I invited to contribute and then created a develop branch:
+
+```gitconfig
+git checkout -b develop
+```
+
+This is where I set up the file structure and created my HTML framework. Once this was completed., I would then create a feature branch for each section of the layout and work on the CSS and JavaScript for each feature separately before merging back into develop.
+
+Creating separate branches for features and making small, regular commits in this way was very helpful in terms of staying organised. One thing I became acutely aware of was the need to make sure to pull the latest code down from GitHub every morning or every time I'd stepped away from my computer for a while. This wasn't an established habit and I almost got caught out a couple of times only to see that Jayme had made changes to the code base in the meantime.
+
+Once Jayme and I were relatively happy with our work it was time to set up a pull request and then invite two fellow students to review our work. The only issue was that I didn't have a clue how to do this. After much searching I came across this lifesaver of an article
