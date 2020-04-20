@@ -164,3 +164,9 @@ toggle.querySelector('input').addEventListener('change', evt => {
 This did the trick in terms of making my buttons visible but it was also incomplete as a solution and had some unintended side-effects:
 
 ![An animated image showing dark mode being toggled on and off](/images/dark-toggle.gif "Houston... we have problems")
+
+So there were three things going on:
+
+1. The pause button was basically disappearing due to the dark class being applied:
+2. The close button at the top of the popup (which is invisible and needs fixing) is flashing when the dark class is applied:
+3. The text is still disappearing.
