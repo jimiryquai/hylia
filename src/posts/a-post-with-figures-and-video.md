@@ -1,14 +1,28 @@
 ---
-title: A post with figures and video
-date: '2019-06-18'
+title: A Week of Firsts
+date: 2020-04-20T06:40:33.500Z
 tags:
-  - demo-content
   - blog
-  - media
+  - learning
 ---
-A post to demonstrate how a blog post looks on Hylia. Content is all set in the “Body” field as markdown and Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.
+I've been taking part in beta-testing the the Web Developer track of the Practicum by Yandex educational platform since 3rd February 2020 and I consider myself exceptionally fortunate to be a part of it. I'm part of the Lime group and, so far, we've completed 5 amazing projects for our portfolios. 
 
-If you want to make an image bleed-out, add a title attribute to it and the front-end will automatically wrap it in a `<figure>` tag for you.
+For our latest project we were split into pairs and asked to code the front-end of a simple 2-3 page app using HTML, CSS and JS. There was a choice of four different app projects that you could request to be a part of :
+
+* 🚗 Car eCommerce
+* 🍔 Food eCommerce
+* 🎥 Movie reviews
+* 🎵 Music streaming
+
+ I ❤️ music so I wanted to be a part of the music streaming app team and I managed to get myself assigned to Beethoven group along with the super-talented Jayme Waye 🎉. Here's the link to the Figma design file that we were tasked with turning into a prototype:
+
+https://www.figma.com/file/rRE5kHZSGzj2XSd0gZQgrl/Music-Player-Box-Template-Copy?node-id=0%3A1
+
+
+
+Every day is a school day and this is what helps me get out of bed in the morning. I ❤️ learning and the feeling of being pushed outside of your comfort zone and this week I learned some things that I feel it's worth making a record of:
+
+1.  
 
 ![The top of a grey concrete building with a blue sky in the background](/images/demo-image-1.jpg "Brutalism at its finest. Photo by Artificial Photography on Unsplash.")
 
