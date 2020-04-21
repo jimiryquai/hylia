@@ -7,6 +7,6 @@ socialImage: ""
 ---
 <!--StartFragment-->
 
-## I’m a front-end web developer based in Chester, focused on performance and accessibility.
+## I’m a front-end web developer based in Chester. I build high-performing, accessible and inclusive websites
 
 <!--EndFragment-->
