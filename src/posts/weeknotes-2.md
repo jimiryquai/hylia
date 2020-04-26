@@ -202,4 +202,22 @@ document.addEventListener('submit', addFormClear);
 
 Phew! I learned an awful lot along the way here - including the fact that you can add multiple functions to event listener that listens for a `"click"`, but you can only add one for an listener that listens for a `"submit"` - hence the three separate listeners above. Did it work? Yes... up to a fashion! The form rendered as expected, but I had inadvertently run into the same problem that I'd previously encountered with the `<template>` element in that I couldn't access the `"Save"` and `"Close"` buttons via event listeners as they aren't present when the page is rendered. Fuuuuuuming 😤!
 
-I got back onto Google and came across the concept of event delegation and this seemed to be the avenue that would lead to the eventual solution but none of the examples I came across really helped me link my situation to them in a way that helped me solve my problem. Then I struck gold with this article on: [Attaching event handlers to dynamically created elements](https://ultimatecourses.com/blog/attaching-event-handlers-to-dynamically-created-javascript-elements).
+I got back onto Google and came across the concept of event delegation and this seemed to be the avenue that would lead to the eventual solution but none of the examples I came across really helped me link my situation to them in a way that helped me solve my problem. Then I struck gold with this article on: [Attaching event handlers to dynamically created elements](https://ultimatecourses.com/blog/attaching-event-handlers-to-dynamically-created-javascript-elements). It was miles simpler than I thought! All I needed to do was to include the event handler, and function we want to assign to it, inside the function that creates the element as follows:
+
+```
+ form.onsubmit = addFormSubmit; // Attach the event!
+```
+
+All we needed was one more line at the end of our 37 line function `addFormCreate` and we'd use this line to link the `onsubmit` event to the `addFormSubmit` function. Happy days! Of course, this now begs the question as to whether I should try to go back and solve the problem using a `<template>` element only this time armed with the right knowledge?  
+
+## Develop a feature that will let users add custom cards
+
+Actually, the code for this is tied together with the creation of the form, as detailed above, and I may need to separate these concerns as I move forward so for now I'll just show you that it works and we'll I'll try and address any potential improvements over the course of the next week:
+
+
+
+<iframe width="575" height="400" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" style="border: none;" src="https://share.getcloudapp.com/z8uxZy5D?embed=true"></iframe>
+
+## Conclusion
+
+I learned so much this week and can honestly say that I haven't ever written as much JavaScript in the course of a week before in all my life. I feel like I've taken another massive step forwards and I can't wait to tackle the remaining items on the list over the course of the next week.
