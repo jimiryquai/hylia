@@ -100,7 +100,9 @@ So what did we do here? For each item within the array, we grabbed the HTML temp
 
 Having just used a `<template>` element to achieve the previous outcome, I was now their biggest fanboy and immediately set about creating a template for the "New Place" form by copying and pasting the HTML for the existing "Edit Profile" form into a `<template>` element. 
 
-> This is going to be a 🚶‍♂️ in the 🏞️  -- <cite>Me</cite>
+> This is going to be a 🚶‍♂️ in the 🏞️  
+>
+> \-- <cite>Me</cite>
 
 OM f@cking G when will I ever learn to stop getting carried away with myself 🤔?
 
@@ -108,6 +110,96 @@ Yes, it was easy to build the template and instantiate it via JavaScript as the 
 
 I did the usual trawl through MDN, StackOverflow and Google and found a quasi-solution at [pawelgrzybek.com](https://pawelgrzybek.com/cloning-dom-nodes-and-handling-attached-events/) but it involved making use of inline events. It worked, but it just felt a bit "hacky" to me and I wasn't sure if it would be accepted by the code review team at Yandex. I started getting a bit p@ssed-off and decided it was time to 📱 a friend.
 
-In times like these I always reach out to one of the experienced mentors - Alex.
+In times like these I always reach out to one of the experienced mentors - Alex. 
 
 <iframe width="575" height="400" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" style="border: none;" src="https://share.getcloudapp.com/5zu1GQn1?embed=true"></iframe>
+
+As you can see, Alex basically informed me that I was probably going the hard way about it and that I should probably just add the form HTML to the page directly and then toggle a visibility class via JavaScript attached to the click event on the "Add" and "Close" buttons. I went ahead and did this and  it worked but, again, it just felt  a little bit "hacky". I'm not saying that it is a hack because I really don't think it is. It just felt like it to me as I hadn't had the technical ability to pull the `<template>` element solution off and that didn't sit well with me.
+
+I decided that, as the form would only ever need to be generated or removed dynamically, it should be done in JavaScript. Here's the code to create the form (including the modal/dialog):
+
+```javascript
+//Create add form
+function addFormCreate () {
+    const dialog = document.createElement("div");
+    const closeButton = document.createElement("button");
+    const header = document.createElement("h2");
+    const form = document.createElement("form");
+    const titleLabel = document.createElement("label");
+    const titleInput = document.createElement("input");
+    const urlLabel = document.createElement("label");
+    const urlInput = document.createElement("input");
+    const submitButton = document.createElement("button");
+    dialog.classList.add('popup__dialog', 'popup__dialog_add')
+    closeButton.classList.add('popup__close', 'popup__close_add')
+    header.classList.add('content-title');
+    header.textContent = "New Place";
+    form.classList.add('form', 'form_add');
+    titleLabel.classList.add('form__label');
+    titleLabel.textContent = "Title";
+    titleInput.classList.add('form__input', 'form__input_title');
+    titleInput.type = "text";
+    titleInput.name = "title";
+    titleInput.placeholder = "Title";
+    titleInput.required = true;
+    urlLabel.classList.add('form__label');
+    urlLabel.textContent = "Image URL";
+    urlInput.classList.add('form__input', 'form__input_url');
+    urlInput.type = "text";
+    urlInput.name = "url";
+    urlInput.placeholder = "Image URL";
+    urlInput.required = true;
+    submitButton.classList.add('button', 'button_submit');
+    submitButton.type = "submit";
+    submitButton.textContent = "Save";
+    form.append(titleLabel, titleInput, urlLabel, urlInput, submitButton);
+    dialog.append(closeButton, header, form);
+    popup.append(dialog);
+}
+```
+
+37 lines of code - and we're not stopping there! Here's the code for toggling the visibility of the form:
+
+```javascript
+//Toggle visibility of add form
+function addFormVisibility () {
+    const addFormDialog = popup.querySelector('.popup__dialog_add');
+    addFormDialog.classList.toggle('popup__dialog_visible');
+}
+```
+
+We also need to clear the form out once it's been submitted:
+
+```javascript
+// Clear form after submit
+function addFormClear () {
+    const titleInput = document.querySelector('.form__input_title');
+    const urlInput = document.querySelector('.form__input_url');
+    urlInput.value = "";
+    titleInput.value = "";
+}
+```
+
+And then add event listeners to the "Add New Place" button:
+
+```javascript
+document.addEventListener('click', function (evt) {
+    if ( evt.target.classList.contains( 'button_add' ) ) {
+        popupToggle();
+        addFormCreate();
+        addFormVisibility();
+    }
+}, false);
+```
+
+And the "Save" button:
+
+```javascript
+document.addEventListener('submit', popupToggle);
+document.addEventListener('submit', addFormVisibility);
+document.addEventListener('submit', addFormClear);
+```
+
+Phew! I learned an awful lot along the way here - including the fact that you can add multiple functions to event listener that listens for a `"click"`, but you can only add one for an listener that listens for a `"submit"` - hence the three separate listeners above. Did it work? Yes... up to a fashion! The form rendered as expected, but I had inadvertently run into the same problem that I'd previously encountered with the `<template>` element in that I couldn't access the `"Save"` and `"Close"` buttons via event listeners as they aren't present when the page is rendered. Fuuuuuuming 😤!
+
+I got back onto Google and came across the concept of event delegation and this seemed to be the avenue that would lead to the eventual solution but none of the examples I came across really helped me link my situation to them in a way that helped me solve my problem. Then I struck gold with this article on: [Attaching event handlers to dynamically created elements](https://ultimatecourses.com/blog/attaching-event-handlers-to-dynamically-created-javascript-elements).
