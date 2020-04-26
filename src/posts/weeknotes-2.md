@@ -4,6 +4,7 @@ title: "Weeknotes #2"
 date: 2020-04-21T17:42:27.373Z
 tags:
   - blog
+  - javascript
 ---
 Following the unexpected bonus of getting to build an app front end in collaboration with [Jayme Waye](https://github.com/jaymew88) last week, it was time to go back to school with the first week of Sprint 6 of the Practicum By Yandex Web Developer track. 
 
@@ -15,8 +16,7 @@ I can't tell you how much I learned in this week's lessons - I had my mind blown
 
 In Sprint 4 we designed a single page website that allowed you to change the name and job description of the on-screen profile via a modal popup form. I can't tell you how happy I was when I got this working - it felt like a 🧙.
 
-![A gif showing the edit](https://www.dropbox.com/s/4b0dkqd13l4ov2u/ezgif.com-optimize.gif?raw=1)
-Having said that, this project obviously needed a lot more work and I made a note saying as much in the README file in the [repo](https://github.com/jimiryquai/around_the_us).
+![A gif showing the edit](https://www.dropbox.com/s/4b0dkqd13l4ov2u/ezgif.com-optimize.gif?raw=1) Having said that, this project obviously needed a lot more work and I made a note saying as much in the README file in the [repo](https://github.com/jimiryquai/around_the_us).
 
 What's that saying? Be careful what you wish for? Here's what we've been asked to do by the end of the sprint:
 
@@ -30,7 +30,84 @@ What's that saying? Be careful what you wish for? Here's what we've been asked t
 
 So the first item in the list was obviously the most pressing concern as we were being asked to turn our hard-coded HTML into dynamically rendered JavaScript. Shots fired 🔫!
 
-To be fair to the guys at Practicum by Yandex, they gave us a massive clue, and head start, bu providing us with an array of objects containing the names and urls of the locations and their images. It looked something like this:
+## When the page is loaded, there must be six cards. Use JavaScript to add them.
 
+To be fair to the guys at Practicum by Yandex, they gave us a massive clue, and head start, by providing us with an array of objects containing the names and urls of the locations and their images. It looked something like this:
 
+```javascript
+const cards = [
+    {
+        name: "Yosemite Valley",
+        link: "https://code.s3.yandex.net/web-code/yosemite.jpg"
+    },
+    {
+        name: "Lake Louise",
+        link: "https://code.s3.yandex.net/web-code/lake-louise.jpg"
+    },
+    {
+        name: "Bald Mountains",
+        link: "https://code.s3.yandex.net/web-code/bald-mountains.jpg"
+    },
+];
+```
 
+We'd just learned an awful lot about arrays, their methods, event listeners and HTML templates in the lessons leading up to this project so it was time for the rubber to hit the 🛣️ and put the theory into practice!
+
+First up, I commented out the hard-coded HTML for the six cards in the photo-grid card. I then re-created the HTML of a single card inside of a `<template>` element just above the closing `</body>` tag.
+
+```html
+    <template id="card-template">
+        <li class="photo-grid__item">
+            <button class="button button_trash"></button>
+            <img src="" alt="" class="photo-grid__image">
+            <div class="photo-grid__content">
+                <h3 class="photo-grid__title"></h3>
+                <button class="button button_heart"></button>
+            </div>
+        </li>
+    </template>
+```
+
+I won't fully go into the why's and how's of template tags here, but [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template) is always a good place to start and then this series of articles on [CSS-TRICKS](https://css-tricks.com/an-introduction-to-web-components/) is an absolute gold-mine of information about Web Components. I've only just scratched the surface in terms of delving into these articles and will be referring back to them often as I try to gain a deeper understanding of Web Components and the Shadow DOM.
+
+Suffice it to say that:
+
+> A `<template>` **element** is a mechanism for holding HTML that is not to be rendered immediately when a page is loaded but may be instantiated subsequently during runtime using JavaScript. -- <cite>MDN</cite>
+
+Instantiated subsequently during runtime using JavaScript you say? 😕
+
+My understanding of this was that I'd need to use JavaScript to loop through the aforementioned array and then populate the source and alt attributes of the image element `<img src="" alt="" class="photo-grid__image">` within the template (and the text content of the header tag `<h3 class="photo-grid__title"></h3>` with the corresponding values from the array. Here's how that went down:
+
+```javascript
+// Add six initial cards on load
+window.onload = (event) => {
+    initialCards.forEach(function (item) {
+        const cardTemplate = document.querySelector('#card-template').content;
+        const cardElement = cardTemplate.cloneNode(true);
+        const cardImage = cardElement.querySelector('.photo-grid__image');
+        const cardTitle =  cardElement.querySelector('.photo-grid__title');
+        cardImage.src = item.link;
+        cardImage.alt = item.name;
+        cardTitle.textContent = item.name;
+        cardsContainer.append(cardElement);
+    });
+  };
+```
+
+So what did we do here? For each item within the array, we grabbed the HTML template and deeply cloned it (including everything within). We then grabbed the card image and title tags from within the template and linked the values from the array to the image and header tags. Bish, bash, bosh... I'll 🍻 to that!
+
+## Add a form for adding a new card
+
+Having just used a `<template>` element to achieve the previous outcome, I was now their biggest fanboy and immediately set about creating a template for the "New Place" form by copying and pasting the HTML for the existing "Edit Profile" form into a `<template>` element. 
+
+> This is going to be a 🚶‍♂️ in the 🏞️  -- <cite>Me</cite>
+
+OM f@cking G when will I ever learn to stop getting carried away with myself 🤔?
+
+Yes, it was easy to build the template and instantiate it via JavaScript as the button to instantiate the code is hard-onto the page. The problem arose when I tried to close the form. The close button would not work and I came to the conclusion that this was happening as the close button was part of the template and, therefore, not part of the page when it loads. 
+
+I did the usual trawl through MDN, StackOverflow and Google and found a quasi-solution at [pawelgrzybek.com](https://pawelgrzybek.com/cloning-dom-nodes-and-handling-attached-events/) but it involved making use of inline events. It worked, but it just felt a bit "hacky" to me and I wasn't sure if it would be accepted by the code review team at Yandex. I started getting a bit p@ssed-off and decided it was time to 📱 a friend.
+
+In times like these I always reach out to one of the experienced mentors - Alex.
+
+<iframe width="575" height="400" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" style="border: none;" src="https://share.getcloudapp.com/5zu1GQn1?embed=true"></iframe>
