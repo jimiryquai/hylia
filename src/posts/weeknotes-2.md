@@ -12,11 +12,13 @@ Week 1 of a Sprint is a series of lessons, 55 of them in total this week, design
 
 # Sprint 6: Week 1
 
-I can't tell you how much I learned in this week's lessons - I had my mind blown several times 🤯. I could rehash some of the lessons here but I think that the best way for me to show what I learned is by showing you how I implemented it in a project.
+I learned a ton in this week's lessons and had my mind blown several times 🤯. I could rehash some of the lessons here but I think that the best way for me to show what I learned is by showing you how I implemented it in a project.
 
-In Sprint 4 we designed a single page website that allowed you to change the name and job description of the on-screen profile via a modal popup form. I can't tell you how happy I was when I got this working - it felt like a 🧙.
+In Sprint 4 we designed a single page website that allowed you to change the name and job description of the on-screen profile via a modal popup form. I was so happy when I got this working - it felt like a 🧙.
 
-![A gif showing the edit](https://www.dropbox.com/s/4b0dkqd13l4ov2u/ezgif.com-optimize.gif?raw=1) Having said that, this project obviously needed a lot more work and I made a note saying as much in the README file in the [repo](https://github.com/jimiryquai/around_the_us).
+![A gif showing the edit](https://www.dropbox.com/s/4b0dkqd13l4ov2u/ezgif.com-optimize.gif?raw=1) 
+
+Having said that, this project obviously needed a lot more work and I made a note saying as much in the README file in the [repo](https://github.com/jimiryquai/around_the_us).
 
 What's that saying? Be careful what you wish for? Here's what we've been asked to do by the end of the sprint:
 
@@ -213,8 +215,6 @@ All we needed was one more line at the end of our 37 line function `addFormCreat
 ## Develop a feature that will let users add custom cards
 
 Actually, the code for this is tied together with the creation of the form, as detailed above, and I may need to separate these concerns as I move forward so for now I'll just show you that it works and we'll I'll try and address any potential improvements over the course of the next week:
-
-
 
 <iframe width="575" height="400" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" style="border: none;" src="https://share.getcloudapp.com/z8uxZy5D?embed=true"></iframe>
 
