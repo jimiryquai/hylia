@@ -53,7 +53,7 @@ const cards = [
 
 We'd just learned an awful lot about arrays, their methods, event listeners and HTML templates in the lessons leading up to this project so it was time for the rubber to hit the 🛣️ and put the theory into practice!
 
-First up, I commented out the hard-coded HTML for the six cards in the photo-grid card. I then re-created the HTML of a single card inside of a `<template>` element just above the closing `</body>` tag.
+First up, I commented out the hard-coded HTML for the six cards in the photo-grid element. I then re-created the HTML of a single card inside of a `<template>` element just above the closing `</body>` tag.
 
 ```html
     <template id="card-template">
