@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: "Weeknotes #2"
-date: 2020-04-21T17:42:27.373Z
+date: 2020-04-26T20:41:32.018Z
 tags:
   - blog
   - javascript
