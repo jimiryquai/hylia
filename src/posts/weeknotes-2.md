@@ -33,3 +33,4 @@ So the first item in the list was obviously the most pressing concern as we were
 To be fair to the guys at Practicum by Yandex, they gave us a massive clue, and head start, bu providing us with an array of objects containing the names and urls of the locations and their images. It looked something like this:
 
 
+
