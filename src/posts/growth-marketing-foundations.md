@@ -116,3 +116,46 @@ There are kind of four steps in the process. The first is designing your experim
 * How to establish the scope of your customer journey map.
 * How to identify all of the components to go on your map.
 * Things to consider when turning your map into a visual.
+
+# How to get the most from your user research
+
+* How your user research can shape your campaigns.
+* How you can avoid users getting forgotten in the midst of a project.
+
+# Involve the user in your campaign design
+
+* How involving the user in the design process helps.
+* Exercises that help understand what tone resonates with users.
+* Ways to engage the user without undermining the role of your copywriters and designers.
+
+# How to test your campaign’s design with users
+
+* How to choose between multiple approaches.
+* How to test whether your mockup is setting the right tone.
+* How to check whether people are taking away the right message.
+* How to know whether people will click what you need them to click.
+
+# Reflect your customer’s mindset with Card Sorting
+
+* What card sorting involves and why it is valuable.
+* Two different approaches to card sorting.
+* How to run a card sorting exercise.
+* How to interpret the results.
+
+# Ensure website success with a prototype you can test
+
+* How to build a prototype cheaply and quickly.
+* How to test your prototype with real users.
+* How to integrate testing at all stages of your website build.
+
+# Testing your websites at scale with unfacilitated usability testing
+
+* What exactly unfacilitated, remote testing is and why it is worth considering.
+* How to run this kind of usability testing.
+* What tools are available to make it considerably cheaper and easier than traditional usability testing.
+
+# How to refine your campaigns post launch
+
+* Why refining a campaign post-launch is so essential.
+* How to use monitoring tools to optimise your conversion rate post-launch.
+* How you can use A/B testing even on low traffic websites.
