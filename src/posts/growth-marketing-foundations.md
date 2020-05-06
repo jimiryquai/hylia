@@ -65,3 +65,54 @@ The build, measure, learn cycle.
 There are kind of four steps in the process. The first is designing your experiment. Then you ship your experiment. You analyze the results. And then, if it works, you automate it and you scale it. If it doesn't work, you take that learning to inform your next task. And then you just keep going through that cycle as quickly as possible.
 
 # Experimentation process
+
+## User-centric marketing
+
+## Why we need a user-centric approach to marketing
+
+* How digital has changed a consumers relationship with businesses and the impact of that on the sales and marketing funnel.
+* Why our current approach of running marketing campaigns is inefficient in the light of the capabilities that digital tools offer us.
+* Why a more user-centric approach to marketing has the potential to improve conversion and create happier customers who will recommend you to others.
+
+## How do we start to adopt a user-centric approach
+
+* Why we need to know more about our users than their tastes and background.
+* The importance of understanding the users tasks and questions.
+* Why mapping the customers journey is so fundamental to success.
+
+# How to better understand your audience without spending a cent
+
+* Just how much hidden knowledge your colleagues hold about your audience.
+* How to extract insights from freely available data sources.
+* How to leverage the huge amount of data users share about themselves everyday.
+
+## Building a picture of your audience using surveys
+
+* What you should be looking to discover when running a survey.
+* How to avoid the common mistakes of running surveys.
+* How to avoid surveys undermining the user experience and conversion rate.
+
+# Discover the power of top task analysis
+
+* What top task analysis is and why it matters.
+* How to run a top task analysis.
+* What to do with the results of your top task analysis.
+
+# Why and how you should be meeting your audience in person
+
+* Why meeting with people is so important.
+* How often you should be spending time with your audience.
+* Different methodologies for meeting with users.
+
+# Customer journey mapping: What is it and why it can help?
+
+* What the role a customer journey map performs.
+* How it is better than a traditional persona.
+* What a customer journey map typically contains.
+
+# How to run a customer journey mapping workshop
+
+* Who to invite to your workshop.
+* How to establish the scope of your customer journey map.
+* How to identify all of the components to go on your map.
+* Things to consider when turning your map into a visual.
