@@ -207,3 +207,6 @@ The top 3 myths about SEO and address the root of their misperception:
 
 
 2. You have to rank #1 for a certain keyword
+
+
+3. SEO is dead
