@@ -159,3 +159,51 @@ There are kind of four steps in the process. The first is designing your experim
 * Why refining a campaign post-launch is so essential.
 * How to use monitoring tools to optimise your conversion rate post-launch.
 * How you can use A/B testing even on low traffic websites.
+
+## Course: Identifying and amplifying growth channels
+
+## Major growth channels
+
+5 main growth channels this training program will explore later in further depth: SEM (Search Engine Marketing), SEO (Search Engine Optimization), Social and Display Ads, Email Marketing, and Content Marketing.
+
+# Identifying, testing, and measuring growth channels
+
+You can’t focus on optimizing all 5 channels at once. In this lesson, Sophia advises on how to assess which (and how many) channels to focus on. You’ll learn which channels are best for scale-ability and budget, and how to determine if a channel has succeeded or failed. When is it time to cut your losses? How much time should you devote to each channel for testing? Sophia will also clue you into which channel is a safe bet to invest time and resources in for just about any company.
+
+### How to pick the first channel
+
+* Study the channels that your audience uses
+* Identify the channels that are a clear mismatch for you
+* Avoid channels that are too competitive
+* Pick a safe bet to start: SEO
+
+### How to measure the results of the channel
+
+* High ROI
+* High ability to scale
+
+### Identifying failing channels
+
+Look at your data!
+
+### Identifying successful channels
+
+Channels must be given the chance to scale before deciding whether they are successful or not.
+
+# Myths about SEO
+
+The top 3 myths about SEO and address the root of their misperception:
+
+1. You shouldn't waste time on SEO - it's automatic
+
+
+
+   It's not - Google will crawl you site faster if you have:
+
+   * **Domain authority** - how well does your site compares to that of your peers
+   * **Page authority** - how well your site is set up for success
+   * **Content schedule** - how frequently you publish new content
+   * **Popularity** - a combination of site traffic, click-through-rate(CTR) and time on site
+
+
+2. You have to rank #1 for a certain keyword
