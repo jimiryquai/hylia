@@ -41,4 +41,26 @@ Here's the main reason that marketers still love email marketing though:
 
 > With an ROI of 42:1, returns on email marketing investments continue to be staggeringly high—and some brands achieve even higher ROIs. -- litmus.com
 
-The Anatomy of an Email
+### The Anatomy of an Email
+
+1. Subject line (can be responsible for as much as 40% of open-rate).
+2. Pre-header (shows up as preview text in your inbox).
+3. Branded graphic header (300px wide for mobile).
+4. Main message.
+5. Call-to-Action.
+6. Supporting Message.
+7. Footer (for the legals).
+
+## Course Overview
+
+1. **The Good:** (5 things to always do).
+2. **The Bad:** (5 things to never do).
+3. **The WOW:** (examples of campaigns that really worked).
+
+### **The Good**
+
+Did you know that the emails that you send might not end up being delivered to your recipients at all 😮? It could end up in their spam folder or just plain disappear into the ether. 
+
+If Gmail thinks your email looks spammy, they won't deliver it and they won't report back to you either so your open rate will be terrible and you'll have a high spam score.
+
+How reputable are you? What do people say about you? The more your recipients think that you're reputable, the more likely you are to see that 100% or inbox placement. So we want to take care of our reputation. A lot of that stems from setting the expectations to our subscribers that they are going to receive email from us, what they are going to receive,how often, things like that.The biggest component of our inbox placement is playing by our subscribers' rules and getting their permission.
