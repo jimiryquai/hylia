@@ -33,4 +33,12 @@ Email gets read:
 
 * The average email read rate is 25-30% compared with 2% on social media. This is a huge difference.
 
+In fact, according to a survey by [Adobe](https://theblog.adobe.com/love-email-but-spreading-the-love-other-channels/) in 2018, consumers prefer to get offers from brands by email because they can read it when they're ready.
+
 ![Adobe survey showing that email still matters](/images/adobe-email-survey.jpg "Email still matters")
+
+Here's the main reason that marketers still love email marketing though:
+
+> With an ROI of 42:1, returns on email marketing investments continue to be staggeringly high—and some brands achieve even higher ROIs. -- litmus.com
+
+The Anatomy of an Email
