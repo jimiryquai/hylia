@@ -1,0 +1,36 @@
+---
+layout: layouts/post.njk
+title: "Email marketing: from basics to best-in-class: review"
+date: 2020-05-11T12:57:26.867Z
+tags:
+  - email list growth
+  - email content
+  - campaigns
+---
+This is a four-part course where we're going to learn how to build lists fast, what to send, and how to make our email marketing data-driven.
+
+## Lesson 1: Email Marketing Basics: The Good, the Bad & the WOW!
+
+### Lesson 1: Objectives
+
+1. Maximise our email marketing by avoiding the spam folder.
+2. Optimise our content for all devices and accessibility settings
+3. Improve engagement by using pre-headers in subject lines.
+4. Know the law to make sure that you stay compliant in today's privacy-focused world.
+
+### It's 2020 - Does Email Marketing Still Work?
+
+The answer is a resounding yes!
+
+Email can send direct:
+
+* At a time that's most relevant to the recipient
+* With personalised content or product offers
+* ... and track individual recipient engagement
+* ... and automate your follow up!
+
+Email gets read:
+
+* The average email read rate is 25-30% compared with 2% on social media. This is a huge difference.
+
+![Adobe survey showing that email still matters](/images/adobe-email-survey.jpg "Email still matters")
