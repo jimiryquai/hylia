@@ -104,8 +104,6 @@ Data drives:
 * **Automation:** Drip-fed content that's delivered automatically.
 * **Optimisation:** Testing allows you to find and then double-down on the right campaigns.
 
-
-
 ### **The Bad:** 5 things to never do
 
 **1. Don't start from scratch**
@@ -127,4 +125,25 @@ It's 2020, it's done. Under CCPA legislation, the people selling you the list ar
 
 **4. Don't forget mobile**
 
-The majority of B2C emails are opened on a mobile device so you really need to adopt a mobile-first approach to your email design.
+The majority of B2C emails are opened on a mobile device so you really need to adopt a mobile-first approach to your email design if this is how you do business. This is not as true for B2B emails but it's easy to design mobile-first so there's no reason why it shouldn't be implemented for B2B also.
+
+**5. Don't send without a pre-flight check**
+
+Make sure your email looks acceptable across the range of devices and inboxes before you send it.
+
+
+
+### **WOW, THAT ROCKED!**
+
+* **Pre-headers can sell:** Subject line and pre-header working well together will boost open rates
+* **Video:** Video and animation can lift pretty significantly in email.
+* **Tell stories:** Don't just sell!
+* **Give your fans a megaphone:** Make sure that you are not the only one saying how great you are, referral programs are powerful!
+
+## Lesson Recap
+
+1. Ask permission to send email
+2. Make your emails a mix of text and images and keep mobile users in mind
+3. Create a multi-channel content plan
+4. Create a testing plan so you learn as you go.
+5. Send personalised content to the right user at the right time by harnessing the power of data.
