@@ -107,3 +107,24 @@ Data drives:
 
 
 ### **The Bad:** 5 things to never do
+
+**1. Don't start from scratch**
+
+Don't sit down once a month and try to write a bunch of emails. Repurpose and include content from your blog, your social channels,and especially videos as they do really well in email.
+
+**2. Don't use one big image... or a bunch of small ones**
+
+If images are turned off, and they are by default in Outlook and some versions of Android, your audience aren't going to see your copy or your CTAs.
+
+**3. Don't buy an email list**
+
+It's 2020, it's done. Under CCPA legislation, the people selling you the list are probable doing so illegally anyway. Don't do it! If you want to grow your list quickly consider investing in:
+
+* Media: Sponsored emails etc
+* SEO/Inbound lead generation
+* Email sign-up promotions
+* In-store/in-air sign-up scripts and contests
+
+**4. Don't forget mobile**
+
+The majority of B2C emails are opened on a mobile device so you really need to adopt a mobile-first approach to your email design.
