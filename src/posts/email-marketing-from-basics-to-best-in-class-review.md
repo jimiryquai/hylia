@@ -57,10 +57,53 @@ Here's the main reason that marketers still love email marketing though:
 2. **The Bad:** (5 things to never do).
 3. **The WOW:** (examples of campaigns that really worked).
 
-### **The Good**
+### **The Good:** 5 things to always do
 
-Did you know that the emails that you send might not end up being delivered to your recipients at all 😮? It could end up in their spam folder or just plain disappear into the ether. 
+Did you know that the emails that you send might not end up being delivered to your recipients at all 😮? It could end up in their spam folder or just plain disappear into the ether.
 
-If Gmail thinks your email looks spammy, they won't deliver it and they won't report this back to you either so your open rate will nosedive and your spam score will skyrocket.
+Marketing emails are subject to a concept known as deliverability so if Gmail thinks your email looks spammy, they won't deliver it. Not only that, but they won't report this back to you either so your open rate will nosedive and your spam score will skyrocket.
 
-How reputable are you? What do people say about you? The more your recipients think that you're reputable, the more likely you are to see that mythical 100% inbox placement. So you want to take care of your reputation and that starts with getting your subscribers' permission, setting expectations about when and how often they'll receive email from you and then playing by these rules.
+How reputable are you? The more your recipients think that you're reputable, the more likely you are to see that mythical 100% inbox placement. So you want to take care of your reputation and that starts with getting your subscribers' permission, setting expectations about when and how often they'll receive email from you, and then playing by these rules.
+
+**1. Get Permission**
+
+* Subscribers should opt-in
+* Set expectations on frequency, value, security
+
+**2. Follow the law - UK & GDPR**
+
+* Identify who you are
+* Give the person the ability to opt out of (or ‘unsubscribe from’) further emails.
+* The intent of the email must be apparent from the subject line and message body
+* State how data will be used in privacy policy
+* Host and transfer data responsibly
+* Explicit permission and proof required
+
+**3. Have a content marketing plan**
+
+You should have a content marketing calendar, which incorporates emails, but also aligns with all your other content marketing channels. You also want to make sure that that plan is aligned with your goals and KPIs - define your metrics for success.
+
+**4. Have a testing plan**
+
+Make sure you set your metrics up front. Do you want to drive opens or do you want to drive conversions?
+
+You can test just about anything:
+
+* Subject lines
+* Day of the week
+* Frequency
+* Personalisation
+* Discount/price
+
+**5. Use email's secret weapon: data**
+
+Data drives:
+
+* **Personalisation:** Tailoring content by adding a recipient's first name.
+* **Segmentation:** Those who get an offer versus those who don't.
+* **Automation:** Drip-fed content that's delivered automatically.
+* **Optimisation:** Testing allows you to find and then double-down on the right campaigns.
+
+
+
+### **The Bad:** 5 things to never do
