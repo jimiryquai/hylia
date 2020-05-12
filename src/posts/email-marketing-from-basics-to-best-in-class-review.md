@@ -61,6 +61,6 @@ Here's the main reason that marketers still love email marketing though:
 
 Did you know that the emails that you send might not end up being delivered to your recipients at all 😮? It could end up in their spam folder or just plain disappear into the ether. 
 
-If Gmail thinks your email looks spammy, they won't deliver it and they won't report back to you either so your open rate will be terrible and you'll have a high spam score.
+If Gmail thinks your email looks spammy, they won't deliver it and they won't report this back to you either so your open rate will nosedive and your spam score will skyrocket.
 
-How reputable are you? What do people say about you? The more your recipients think that you're reputable, the more likely you are to see that 100% or inbox placement. So we want to take care of our reputation. A lot of that stems from setting the expectations to our subscribers that they are going to receive email from us, what they are going to receive,how often, things like that.The biggest component of our inbox placement is playing by our subscribers' rules and getting their permission.
+How reputable are you? What do people say about you? The more your recipients think that you're reputable, the more likely you are to see that mythical 100% inbox placement. So you want to take care of your reputation and that starts with getting your subscribers' permission, setting expectations about when and how often they'll receive email from you and then playing by these rules.
