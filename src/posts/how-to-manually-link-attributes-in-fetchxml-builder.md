@@ -10,11 +10,13 @@ I created a Power Apps Portals Web Form that spans across three CDS entities (or
 
 > As a job seeker, I want the ability to complete an application form(s) over multiple sessions so that I can return to it later if I don’t have the time to complete it in one session.
 
-I needed to create a list of partially completed applications specific to the current portal user. Seems like a job for an Entity List right? Not on this occasion :(. I'll explain why in a more detailed post.
+I needed to create a list of partially completed applications specific to the current portal user. Seems like a job for an Entity List right? Not on this occasion 😒. I'll explain why in a more detailed post.
 
 So with Entity Lists out of the picture I turned to FetchXML and the FetchXML Builder tool for XrmToolBox.
 
 What I found was that I was unable to select the attribute **adx_primaryrecordid** from within the Node Properties of the link-entity **adx_webformsession**. I was able to select **adx_contact** and link to **pfc_applicant**. Seeing as though there can be only one Contact/Applicant per Vacancy Application I thought this would do the trick. Here's the FetchXML:
+
+
 
 ```xml
 `<fetch distinct="true" returntotalrecordcount="true" >
@@ -46,6 +48,8 @@ What I found was that I was unable to select the attribute **adx_primaryrecordid
 </fetch>`
 ```
 
+
+
 Unfortunately, this did not work and returned multiple records for the same Vacancy Application. I had only two Web Form Sessions:
 
 ![Web Form Sessions with only two records displayed](/images/websessions.png "Web Form Sessions Tab Within Web Form on Power Apps Portal")
@@ -53,8 +57,6 @@ Unfortunately, this did not work and returned multiple records for the same Vaca
 Yet my query was returning four records:
 
 ![FetchXML Builder Screenshot Showing Four Records](/images/partialfetch.png "FetchXML Builder Screenshot Showing Four Records")
-
-
 
 I was perplexed to say the least and couldn't get my head around it at all. The usual avenues of Google and Stack Overflow weren't much help either so it was time to phone a friend.
 
