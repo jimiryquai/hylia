@@ -17,7 +17,7 @@ So with Entity Lists out of the picture I turned to FetchXML and the FetchXML Bu
 What I found was that I was unable to select the attribute **adx_primaryrecordid** from within the Node Properties of the link-entity **adx_webformsession**. I was able to select **adx_contact** and link to **pfc_applicant**. Seeing as though there can be only one Contact/Applicant per Vacancy Application I thought this would do the trick. Here's the FetchXML:
 
 ```xml
-`<fetch distinct="true" returntotalrecordcount="true" >
+<fetch distinct="true" returntotalrecordcount="true" >
   <entity name="pfc_vacancyapplication" >
     <attribute name="pfc_no" />
     <attribute name="statuscode" />
@@ -43,7 +43,7 @@ What I found was that I was unable to select the attribute **adx_primaryrecordid
       <attribute name="adx_currentwebformstep" alias="stepid" />
     </link-entity>
   </entity>
-</fetch>`
+</fetch>
 ```
 
 Unfortunately, this did not work and returned multiple records for the same Vacancy Application. I had only two Web Form Sessions:
