@@ -16,6 +16,7 @@ So with Entity Lists out of the picture I turned to FetchXML and the FetchXML Bu
 
 What I found was that I was unable to select the attribute **adx_primaryrecordid** from within the Node Properties of the link-entity **adx_webformsession**. I was able to select **adx_contact** and link to **pfc_applicant**. Seeing as though there can be only one Contact/Applicant per Vacancy Application I thought this would do the trick. Here's the FetchXML:
 
+```xml
 `<fetch distinct="true" returntotalrecordcount="true" >
   <entity name="pfc_vacancyapplication" >
     <attribute name="pfc_no" />
@@ -43,14 +44,17 @@ What I found was that I was unable to select the attribute **adx_primaryrecordid
     </link-entity>
   </entity>
 </fetch>`
+```
 
 Unfortunately, this did not work and returned multiple records for the same Vacancy Application. I had only two Web Form Sessions:
 
-!\[[WebSessions.png]]
+![Web Form Sessions with only two records displayed](/images/websessions.png "Web Form Sessions Tab Within Web Form on Power Apps Portal")
 
 Yet my query was returning four records:
 
-!\[[PartialFetch.png]]
+![FetchXML Builder Screenshot Showing Four Records](/images/partialfetch.png "FetchXML Builder Screenshot Showing Four Records")
+
+
 
 I was perplexed to say the least and couldn't get my head around it at all. The usual avenues of Google and Stack Overflow weren't much help either so it was time to phone a friend.
 
@@ -62,6 +66,6 @@ Rob's first question was 'Why are you linking on the Contact Entity? ' Typical R
 
 What I had to do was type **adx_primaryrecordid** into the *From* column and select **pfc_vacancyapplicationid** from the choices in the *To* column from the Node Properties of the adx_webformsession link-entity and voila:
 
-!\[[PrimaryRecordID.png]]
+![FetchXML Builder Screenshot Showing Two Records](/images/primaryrecordid.png "FetchXML Builder Screenshot Showing Two Records")
 
 Cheers Rob!
