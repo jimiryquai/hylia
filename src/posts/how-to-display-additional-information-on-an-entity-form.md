@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: How to Display Additional Information on an Entity Form
-date: 2021-06-28T08:29:52.942Z
+date: 2021-06-28T08:55:15.793Z
 ---
 ```javascript
 function popoverSwitcher() {
