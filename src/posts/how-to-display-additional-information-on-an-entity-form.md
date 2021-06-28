@@ -4,6 +4,11 @@ title: How to Display Additional Information on an Entity Form
 date: 2021-06-28T08:55:15.793Z
 ---
 ```html
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+```
+
+```html
 <button id="tiered-rate-popover" class="btn btn-popover" type="button" data-toggle="popover" data-trigger="focus"><i class="fas fa-info-circle"></i></button>
 ```
 
