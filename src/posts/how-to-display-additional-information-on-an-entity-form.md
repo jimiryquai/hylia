@@ -3,6 +3,10 @@ layout: layouts/post.njk
 title: How to Display Additional Information on an Entity Form
 date: 2021-06-28T08:55:15.793Z
 ---
+```html
+<button id="tiered-rate-popover" class="btn btn-popover" type="button" data-toggle="popover" data-trigger="focus"><i class="fas fa-info-circle"></i></button>
+```
+
 ```javascript
 function popoverSwitcher() {
     var tieredRateValue = $('#pfc_tieredrate').val();
@@ -66,8 +70,6 @@ $('#tiered-rate-popover').on('blur', function () {
     $('#tiered-rate-popover').popover('destroy');
 });
 ```
-
-
 
 ```javascript
 $(document).on('click', '#tiered-rate-popover', function () {
