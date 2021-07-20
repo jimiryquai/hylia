@@ -12,13 +12,18 @@ tags:
   - Model-DrivenApp
   - DocumentLocations
 ---
-I recently had a requirement for Field Service Engineers to be able to save multiple photos captured from the camera control in a Canvas App to the specific SharePoint Document Location associated with the Job that they are currently undertaking, thereby giving the Administrators in the office full visibility of the photos from within the Model-Driven App that they use for scheduling the Jobs.
+I recently had a requirement for Field Service Engineers to be able to save multiple photos captured from the camera control in a Canvas App to the SharePoint Document Location associated with the Job record that they are working on - thereby giving the Administrators in the office full visibility of the photos from within the Model-Driven App that they use for scheduling the Jobs.
 
 In order to achieve this I needed to configure:
 
 1. The Model-Driven App; and
-1. The Canvas App; and
-1. A Power Automate Flow.
+2. The Canvas App; and
+3. A Power Automate Flow.
 
 ## The Model-Driven App
 
+
+
+![Document Management Settings](/images/dm_settings.png "Document Management Settings Modal")
+
+A good friend of mine [Rob Nightingale](https://www.linkedin.com/in/rob-nightingale-bba8a89/) always
