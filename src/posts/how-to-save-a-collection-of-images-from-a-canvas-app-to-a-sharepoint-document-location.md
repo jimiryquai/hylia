@@ -34,4 +34,4 @@ In terms of the Model-Driven app I needed to do two things:
 
 A good friend of mine [Rob Nightingale](https://www.linkedin.com/in/rob-nightingale-bba8a89/) once told me (ok - I needed telling more than once 🤣) that you should always execute a process manually **before** trying to automate it so that's what I did next. I uploaded an image to the **Documents on Default Site 1** Document Location and found that, within SharePoint, the image had been stored inside a folder that had been named with the following convention: **Name_RowId**: 
 
-![Document Location](/images/documents_subgrid.png "Document Location")
+![Document Location](/images/doc_location.png "Document Location")
