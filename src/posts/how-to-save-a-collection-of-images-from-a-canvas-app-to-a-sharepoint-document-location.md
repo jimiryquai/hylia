@@ -16,8 +16,9 @@ I recently had a requirement for Field Service Engineers to be able to save mult
 
 In order to achieve this I needed to configure:
 
-1. The Model-Driven App;
-1. The Canvas App;
-1. A Power Automate Flow
+1. The Model-Driven App; and
+1. The Canvas App; and
+1. A Power Automate Flow.
 
 ## The Model-Driven App
+
