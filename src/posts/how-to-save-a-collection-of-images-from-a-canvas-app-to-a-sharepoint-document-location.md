@@ -22,8 +22,14 @@ In order to achieve this I needed to configure:
 
 ## The Model-Driven App
 
+In terms of the Model-Driven app I needed to do two things:
 
+1. Set the default document management settings via [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) > Your Environment > Settings > Integration > Document management settings:
 
-![Document Management Settings](/images/dm_settings.png "Document Management Settings Modal")
+![Document management settings](/images/dm_settings.png "Document management settings modal")
+
+1. Add a related Documents Subgrid to the Main form of the Jobs table:
+
+![Documents Subgrid](/images/documents_subgrid.png "Documents Subgrid")
 
 A good friend of mine [Rob Nightingale](https://www.linkedin.com/in/rob-nightingale-bba8a89/) always
