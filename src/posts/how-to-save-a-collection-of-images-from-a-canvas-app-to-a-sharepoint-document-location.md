@@ -119,3 +119,19 @@ ForAll(
 I added a **PowerApps** step, followed by a **(Dataverse) Get a row by ID** step:
 
 ![Getting a row by ID](/images/getarowbyid.png "Getting a row by ID")
+
+In the **Row ID** column for the **Get a row by ID**, from the Dynamic Content modal, I chose **Ask in PowerApps** which generated **GetarowbyID_RowID** "variable" for me. I would be passing the **Job ID** value from my Canvas App to this "variable" so I returned to the app to test this before building out the rest of the flow:
+
+## The Canvas App: Part 2
+
+I added the following code to the **OnSelect** property of the Submit Button control:
+
+```yaml
+SaveToSharePointDocumentLibrary.Run(Set(JobID, Job_DataCard1.Default));
+```
+
+I then previewed the app and selected the Submit Button in order to trigger my flow:
+
+
+![Flow Run](/images/flow_success.png "Flow Run")
+
