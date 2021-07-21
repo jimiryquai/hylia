@@ -56,3 +56,66 @@ I added the following code to the **OnSelect** property of the control:
 ```yaml
 Collect(colCameraImages, Self.Photo)
 ```
+
+### Gallery control
+
+I added the following to the **Items** property of the control 
+
+```yaml
+colCameraImages
+```
+
+### Clear Button
+
+I added the following code to the **OnSelect** property of the control:
+
+```yaml
+Clear(colCameraImages)
+```
+
+### Submit Button
+
+This is where it got a bit tricky and interesting. I was perplexed as to how to I could add a unique name to each image and get the whole collection to Power Automate... until I came across this lifesaver of an article by [Mikael Svenson](https://www.techmikael.com/2017/05/saving-collection-of-images-from.html).
+
+As a result of that article I added the following code to the **OnSelect** property of the control:
+
+```yaml
+ForAll(
+    colCameraImages,
+    Collect(
+        SubmitData,
+        {
+            filename: Concatenate(
+                Text(
+                    Now(),
+                    DateTimeFormat.LongDate
+                ),
+                Mid(
+                    "0123456789ABCDEFGHIJKLMNOPQRTSTIUVWXYZ",
+                    1 + RoundDown(
+                        Rand() * 36,
+                        0
+                    ),
+                    1
+                ),
+                Mid(
+                    "0123456789ABCDEFGHIJKLMNOPQRTSTIUVWXYZ",
+                    1 + RoundDown(
+                        Rand() * 36,
+                        0
+                    ),
+                    1
+                ),
+                ".jpg"
+            ),
+            filebody: Url
+        }
+    )
+);
+```
+
+### The Power Automate Flow
+
+I added a **PowerApps** step, followed by a **(Dataverse) Get a row by ID** step:
+
+![Getting a row by ID](/images/getarowbyid.png "Getting a row by ID")
