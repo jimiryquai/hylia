@@ -53,6 +53,6 @@ I then created another screen with the following components:
 
 I added the following code to the **OnSelect** property of the control:
 
-``` YAML
+```yaml
 Collect(colCameraImages, Self.Photo)
 ```
