@@ -48,3 +48,11 @@ I then created another screen with the following components:
 4. Submit Button
 
 ![Camera Control Screen](/images/camera_control_screen.png "Camera Control Screen")
+
+### Camera control
+
+I added the following code to the **OnSelect** property of the control:
+
+``` YAML
+Collect(colCameraImages, Self.Photo)
+```
