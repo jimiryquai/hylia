@@ -120,7 +120,7 @@ I added a **PowerApps** step, followed by a **(Dataverse) Get a row by ID** step
 
 ![Getting a row by ID](/images/getarowbyid.png "Getting a row by ID")
 
-In the **Row ID** column for the **Get a row by ID**, from the Dynamic Content modal, I chose **Ask in PowerApps** which generated **GetarowbyID_RowID** "variable" for me. I would be passing the **Job ID** value from my Canvas App to this "variable" so I returned to the app to test this before building out the rest of the flow:
+In the **Row ID** column for the **Get a row by ID**, from the Dynamic Content modal, I chose **Ask in PowerApps** which generated **GetarowbyID_RowID** "variable" for me. I would be passing the **JobID** value from my Canvas App to this "variable" so I returned to the app to test this before building out the rest of the flow:
 
 ## The Canvas App: Part 2
 
@@ -137,5 +137,10 @@ I then previewed the app and selected the Submit Button in order to trigger my f
 The flow run was successful but I noticed something at this point - the **JobID** that had been passed to the flow contained dashes - as is often the case with a GUID. This wasn't a problem in and of itself, but I would be using this **JobID** in the SharePoint file path for my images and I already knew from my manual upload that the **JobID** part of the file path didn't contain any dashes:
 
 
-
 ![File Path](/images/docs_file_path.png "File Path")
+
+I solved this by adding a **Compose** step where I added the following expression:
+
+```yaml
+replace(outputs('Get_a_row_by_ID')?['body/cr98f_jobid'], '-', '')
+```
