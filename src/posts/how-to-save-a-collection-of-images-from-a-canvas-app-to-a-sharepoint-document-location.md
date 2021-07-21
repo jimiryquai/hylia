@@ -132,6 +132,10 @@ SaveToSharePointDocumentLibrary.Run(Set(JobID, Job_DataCard1.Default));
 
 I then previewed the app and selected the Submit Button in order to trigger my flow:
 
-
 ![Flow Run](/images/flow_success.png "Flow Run")
 
+The flow run was successful but I noticed something at this point - the **JobID** that had been passed to the flow contained dashes - as is often the case with a GUID. This wasn't a problem in and of itself, but I would be using this **JobID** in the SharePoint file path for my images and I already knew from my manual upload that the **JobID** part of the file path didn't contain any dashes:
+
+
+
+![File Path](/images/docs_file_path.png "File Path")
