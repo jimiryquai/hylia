@@ -14,7 +14,9 @@ tags:
 ---
 Requirement: Create a Custom Connector for D365 F&O
 
-I﻿ recently had a requirement to create a custom connector and was provided a Postman collection to help me along my way. I imported this collection into Postman and found that it contained two endpoints - one of which was an authorization code flow that needed to be run to obtain an access token that would be passed as a variable to the D365 F&O endpoint.
+I﻿ recently had a requirement to create a custom connector and was provided a Postman collection to help me along my way. I imported this collection into Postman and found that it contained two endpoints - one of which was an authorization code flow that needed to be run to obtain an access token that would be passed as a variable to the D365 F&O endpoint so that I could then make API requests.
+
+
 
 
 
